@@ -1,22 +1,19 @@
 'use client';
-
 import { motion } from 'framer-motion';
-
 const experiences = [
   {
-    title: 'AI Robotics Course',
-    company: 'NAVTTC',
-    period: 'Current - 3-4 months',
-    description: 'Enrolled in an intensive AI Robotics program focusing on practical applications of artificial intelligence in robotics systems. Learning advanced concepts in machine learning, computer vision, and robotic control systems.'
+    title: 'BS Artificial Intelligence (BSAI)',
+    company: 'Abasyn University Islamabad',
+    period: '3rd Semester',
+    description: 'Pursuing comprehensive education in artificial intelligence, covering machine learning algorithms, neural networks, data science, and software engineering principles.'
   },
   {
-    title: 'BSAI Student',
-    company: 'Bachelor of Science in Artificial Intelligence',
+    title: 'Full-Stack AI Robotics Course',
+    company: 'NAVTTC Centre of Excellence',
     period: 'Ongoing',
-    description: 'Pursuing comprehensive education in artificial intelligence, covering machine learning algorithms, neural networks, data science, and software engineering principles.'
+    description: 'Enrolled in an intensive AI Robotics program focusing on practical applications of artificial intelligence in robotics systems. Learning advanced concepts in machine learning, computer vision, and robotic control systems.'
   }
 ];
-
 const Experience = () => {
   return (
     <section id="experience" className="py-20 bg-gray-900 text-white">
@@ -31,7 +28,6 @@ const Experience = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Experience</h2>
           <div className="w-24 h-1 bg-blue-400 mx-auto"></div>
         </motion.div>
-
         <div className="max-w-4xl mx-auto">
           {experiences.map((exp, index) => (
             <motion.div
@@ -55,5 +51,4 @@ const Experience = () => {
     </section>
   );
 };
-
 export default Experience;
