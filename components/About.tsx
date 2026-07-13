@@ -1,7 +1,5 @@
 'use client';
-
 import { motion } from 'framer-motion';
-
 const About = () => {
   return (
     <section id="about" className="py-20 bg-gray-900 text-white">
@@ -16,7 +14,6 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
           <div className="w-24 h-1 bg-blue-400 mx-auto"></div>
         </motion.div>
-
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -28,7 +25,6 @@ const About = () => {
               <span className="text-6xl">🤖</span>
             </div>
           </motion.div>
-
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -37,7 +33,7 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-lg leading-relaxed">
-              I am a Bachelor of Science in Artificial Intelligence (BSAI) student currently enrolled in a 3-4 month AI Robotics course at NAVTTC. I'm passionate about leveraging AI and robotics to solve real-world problems and create innovative solutions.
+              I am a Bachelor of Science in Artificial Intelligence (BSAI) student at Abasyn University Islamabad, currently in my 3rd semester. Alongside my degree, I'm enrolled in a full-stack AI Robotics course at NAVTTC Centre of Excellence, and I'm passionate about leveraging AI and robotics to solve real-world problems and create innovative solutions.
             </p>
             <p className="text-lg leading-relaxed">
               My journey in tech has equipped me with a solid foundation in AI algorithms, machine learning, and full-stack development. I'm eager to apply my knowledge in practical projects and contribute to the field of intelligent systems.
@@ -45,7 +41,6 @@ const About = () => {
             <p className="text-lg leading-relaxed">
               When I'm not coding, you can find me exploring the latest advancements in robotics or working on personal projects that combine AI with creative problem-solving.
             </p>
-
             <div className="flex flex-wrap gap-4 mt-8">
               {['AI/ML', 'Robotics', 'Full Stack Development', 'Python', 'JavaScript', 'React'].map((skill) => (
                 <span key={skill} className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm">
@@ -59,5 +54,4 @@ const About = () => {
     </section>
   );
 };
-
 export default About;
